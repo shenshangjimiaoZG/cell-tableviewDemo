@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1124A5631E7812D20012D5FC /* Simulator Screen Shot 2017年3月14日 19.51.33.png in Resources */ = {isa = PBXBuildFile; fileRef = 1124A5621E7812D20012D5FC /* Simulator Screen Shot 2017年3月14日 19.51.33.png */; };
 		1169A4311E76A11D007C6994 /* ContentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1169A4301E76A11D007C6994 /* ContentInfo.m */; };
 		1169A4341E76A214007C6994 /* CommentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1169A4331E76A214007C6994 /* CommentInfo.m */; };
 		1169A4371E76A431007C6994 /* ContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1169A4361E76A431007C6994 /* ContentTableViewCell.m */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1124A5621E7812D20012D5FC /* Simulator Screen Shot 2017年3月14日 19.51.33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2017年3月14日 19.51.33.png"; sourceTree = "<group>"; };
 		1169A42F1E76A11D007C6994 /* ContentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentInfo.h; sourceTree = "<group>"; };
 		1169A4301E76A11D007C6994 /* ContentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentInfo.m; sourceTree = "<group>"; };
 		1169A4321E76A214007C6994 /* CommentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentInfo.h; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		11DE62061E769B47002E670B /* cell嵌套tableviewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1124A5621E7812D20012D5FC /* Simulator Screen Shot 2017年3月14日 19.51.33.png */,
 				11DE621E1E769FA9002E670B /* HYBMasonryAutoCellHeight */,
 				11DE62271E76A07A002E670B /* model */,
 				11DE62261E76A06F002E670B /* view */,
@@ -230,6 +233,7 @@
 				11DE62171E769B47002E670B /* LaunchScreen.storyboard in Resources */,
 				11DE62141E769B47002E670B /* Assets.xcassets in Resources */,
 				11DE62121E769B47002E670B /* Main.storyboard in Resources */,
+				1124A5631E7812D20012D5FC /* Simulator Screen Shot 2017年3月14日 19.51.33.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
