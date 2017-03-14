@@ -1,0 +1,18 @@
+PODS:
+  - IQKeyboardManager (4.0.8)
+  - Masonry (1.0.2)
+  - ZYCornerRadius (1.0.2)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - Masonry
+  - ZYCornerRadius
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  ZYCornerRadius: f0af817be7805b5c63d793042ca7a03f81e14069
+
+PODFILE CHECKSUM: f1a7f1856747219ff6ef62000febc5a583a11b2c
+
+COCOAPODS: 1.1.1
