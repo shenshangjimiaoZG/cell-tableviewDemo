@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1124A5631E7812D20012D5FC /* Simulator Screen Shot 2017年3月14日 19.51.33.png in Resources */ = {isa = PBXBuildFile; fileRef = 1124A5621E7812D20012D5FC /* Simulator Screen Shot 2017年3月14日 19.51.33.png */; };
+		1151E8CE1E78DC1E00C42F73 /* asap.png in Resources */ = {isa = PBXBuildFile; fileRef = 1151E8CD1E78DC1E00C42F73 /* asap.png */; };
 		1169A4311E76A11D007C6994 /* ContentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1169A4301E76A11D007C6994 /* ContentInfo.m */; };
 		1169A4341E76A214007C6994 /* CommentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1169A4331E76A214007C6994 /* CommentInfo.m */; };
 		1169A4371E76A431007C6994 /* ContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1169A4361E76A431007C6994 /* ContentTableViewCell.m */; };
@@ -20,11 +20,11 @@
 		11DE62171E769B47002E670B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DE62151E769B47002E670B /* LaunchScreen.storyboard */; };
 		11DE62231E769FEE002E670B /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DE62201E769FEE002E670B /* UITableViewCell+HYBMasonryAutoCellHeight.m */; };
 		11DE62241E769FEE002E670B /* UITableView+HYBCacheHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DE62221E769FEE002E670B /* UITableView+HYBCacheHeight.m */; };
-		F7B308E657114540418521DF /* libPods-cell嵌套tableviewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8495BA56879A23D1B7654514 /* libPods-cell嵌套tableviewDemo.a */; };
+		B1C563691814BA6C03D698D2 /* Pods_cell__tableviewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6455C0D414B9C261593420E8 /* Pods_cell__tableviewDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1124A5621E7812D20012D5FC /* Simulator Screen Shot 2017年3月14日 19.51.33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2017年3月14日 19.51.33.png"; sourceTree = "<group>"; };
+		1151E8CD1E78DC1E00C42F73 /* asap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asap.png; sourceTree = "<group>"; };
 		1169A42F1E76A11D007C6994 /* ContentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentInfo.h; sourceTree = "<group>"; };
 		1169A4301E76A11D007C6994 /* ContentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentInfo.m; sourceTree = "<group>"; };
 		1169A4321E76A214007C6994 /* CommentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentInfo.h; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		11DE62211E769FEE002E670B /* UITableView+HYBCacheHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HYBCacheHeight.h"; sourceTree = "<group>"; };
 		11DE62221E769FEE002E670B /* UITableView+HYBCacheHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HYBCacheHeight.m"; sourceTree = "<group>"; };
 		59D4BD23B01BD9A41C73F96E /* Pods-cell嵌套tableviewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cell嵌套tableviewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-cell嵌套tableviewDemo/Pods-cell嵌套tableviewDemo.release.xcconfig"; sourceTree = "<group>"; };
-		8495BA56879A23D1B7654514 /* libPods-cell嵌套tableviewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cell嵌套tableviewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6455C0D414B9C261593420E8 /* Pods_cell__tableviewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cell__tableviewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E751426F8B9C792EEA3D1BF0 /* Pods-cell嵌套tableviewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cell嵌套tableviewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cell嵌套tableviewDemo/Pods-cell嵌套tableviewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,13 +57,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7B308E657114540418521DF /* libPods-cell嵌套tableviewDemo.a in Frameworks */,
+				B1C563691814BA6C03D698D2 /* Pods_cell__tableviewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1151E8CC1E78DBFF00C42F73 /* screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				1151E8CD1E78DC1E00C42F73 /* asap.png */,
+			);
+			name = screenshot;
+			sourceTree = "<group>";
+		};
 		11DE61FB1E769B47002E670B = {
 			isa = PBXGroup;
 			children = (
@@ -85,7 +93,7 @@
 		11DE62061E769B47002E670B /* cell嵌套tableviewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1124A5621E7812D20012D5FC /* Simulator Screen Shot 2017年3月14日 19.51.33.png */,
+				1151E8CC1E78DBFF00C42F73 /* screenshot */,
 				11DE621E1E769FA9002E670B /* HYBMasonryAutoCellHeight */,
 				11DE62271E76A07A002E670B /* model */,
 				11DE62261E76A06F002E670B /* view */,
@@ -154,7 +162,7 @@
 		B0BD9FFEBC92B0F6886458D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8495BA56879A23D1B7654514 /* libPods-cell嵌套tableviewDemo.a */,
+				6455C0D414B9C261593420E8 /* Pods_cell__tableviewDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -230,10 +238,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1151E8CE1E78DC1E00C42F73 /* asap.png in Resources */,
 				11DE62171E769B47002E670B /* LaunchScreen.storyboard in Resources */,
 				11DE62141E769B47002E670B /* Assets.xcassets in Resources */,
 				11DE62121E769B47002E670B /* Main.storyboard in Resources */,
-				1124A5631E7812D20012D5FC /* Simulator Screen Shot 2017年3月14日 19.51.33.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

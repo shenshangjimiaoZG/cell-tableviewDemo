@@ -10,3 +10,8 @@
 #endif
 #endif
 
+#import "UIImageView+CornerRadius.h"
+
+FOUNDATION_EXPORT double ZYCornerRadiusVersionNumber;
+FOUNDATION_EXPORT const unsigned char ZYCornerRadiusVersionString[];
+

@@ -1,0 +1,6 @@
+framework module Pods_cell__tableviewDemo {
+  umbrella header "Pods-cell嵌套tableviewDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
