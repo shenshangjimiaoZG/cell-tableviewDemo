@@ -1,15 +1,11 @@
 #import <UIKit/UIKit.h>
 @class ContentInfo;
 
-@protocol ContentTableViewCellDelegate <NSObject>
-
--(void)reloadCellHeightForModel:(ContentInfo*)content atIndexPath:(NSIndexPath*)indexPath;
-
-@end
-
 static NSString *kContentTableViewCell=@"ContentTableViewCell";
 
 @interface ContentTableViewCell : UITableViewCell
-@property (nonatomic,assign)id<ContentTableViewCellDelegate> delegate;
+@property (nonatomic,copy)void(^updateBlock)(BOOL isUpdate,NSIndexPath *indexPath);
+
 -(void)configCell:(ContentInfo*)content withIndexPath:(NSIndexPath*)indexPath;
+
 @end

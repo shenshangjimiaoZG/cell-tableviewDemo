@@ -72,7 +72,7 @@
             make.right.equalTo(weakSelf.lblTitle.mas_left).offset(-15);
         }];
         [self.lblTitle mas_makeConstraints:^(MASConstraintMaker *make) {
-           
+            
             
             make.left.equalTo(weakSelf.headerImgView.mas_right).offset(15);
             make.right.equalTo(weakSelf.contentView.mas_right).offset(-15);
@@ -136,7 +136,7 @@
         [self.imgAry mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedItemLength:225 leadSpacing:5 tailSpacing:5];
         
         self.commentTable.separatorStyle = UITableViewCellSeparatorStyleNone;
-       
+        
         
         self.selectionStyle=UITableViewCellSelectionStyleNone;
         
@@ -144,7 +144,7 @@
         line.backgroundColor=[UIColor colorWithRed:175.0f/255 green:171.0f/255 blue:179.0f/255 alpha:1];
         [self.contentView addSubview:line];
         [line mas_makeConstraints:^(MASConstraintMaker *make) {
-           
+            
             make.left.right.bottom.equalTo(self.contentView);
             make.height.equalTo(@1);
         }];
@@ -176,7 +176,7 @@
             return @{kHYBCacheUniqueKey : comment.cid,
                      kHYBCacheStateKey :comment.cid,
                      kHYBRecalculateForStateKey : @(NO)};
-
+            
         }];
         commentTableHight+=cellH;
     }
@@ -225,9 +225,9 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [self.info.comments removeObjectAtIndex:indexPath.row];
         
-        if ([self.delegate respondsToSelector:@selector(reloadCellHeightForModel:atIndexPath:)]) {
-            self.info.isUpdateCacheCell_hight = YES;
-            [self.delegate reloadCellHeightForModel:self.info atIndexPath:self.indexPath];
+        if(self.updateBlock)
+        {
+            self.updateBlock(YES,self.indexPath);
         }
     }
 }
@@ -251,11 +251,12 @@
     
     [self.info.comments addObject:model];
     
-    if ([self.delegate respondsToSelector:@selector(reloadCellHeightForModel:atIndexPath:)]) {
-        self.info.isUpdateCacheCell_hight = YES;
-        [self.delegate reloadCellHeightForModel:self.info atIndexPath:self.indexPath];
+    if(self.updateBlock)
+    {
+        self.updateBlock(YES,self.indexPath);
     }
-
+    
+    
     self.txtInput.text=nil;
 }
 @end

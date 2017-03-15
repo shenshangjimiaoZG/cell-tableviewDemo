@@ -6,7 +6,7 @@
 #import "UITableViewCell+HYBMasonryAutoCellHeight.h"
 #import <Masonry/Masonry.h>
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource, ContentTableViewCellDelegate>
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic,strong)UITableView *infoTable;
 @property (nonatomic,strong)NSMutableArray *items;
@@ -27,7 +27,7 @@
     [self.infoTable registerClass:[ContentTableViewCell class] forCellReuseIdentifier:kContentTableViewCell];
     [self.view addSubview:self.infoTable];
     [self.infoTable mas_makeConstraints:^(MASConstraintMaker *make) {
-       
+        
         make.edges.equalTo(self.view);
     }];
     self.items=[NSMutableArray array];
@@ -50,7 +50,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-   
+    
     ContentInfo *model = [self.items objectAtIndex:indexPath.row];
     
     CGFloat h = [ContentTableViewCell hyb_heightForTableView:tableView config:^(UITableViewCell *sourceCell) {
@@ -60,7 +60,6 @@
         NSDictionary *cache = @{kHYBCacheUniqueKey : model.uid,
                                 kHYBCacheStateKey  : model.uid,
                                 kHYBRecalculateForStateKey : @(model.isUpdateCacheCell_hight)};
-        model.isUpdateCacheCell_hight = NO;
         return cache;
     }];
     
@@ -75,10 +74,17 @@
         cell = [[ContentTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kContentTableViewCell];
         
     }
-    cell.delegate = self;
+    
     ContentInfo *model = [self.items objectAtIndex:indexPath.row];
-   
+    cell.updateBlock=^(BOOL isupdate ,NSIndexPath *indexPath)
+    {
+        model.isUpdateCacheCell_hight=isupdate;
+        
+        [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+    };
     [cell configCell:model withIndexPath:indexPath];
+    model.isUpdateCacheCell_hight=NO;
     
     return cell;
 }
@@ -90,9 +96,4 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)reloadCellHeightForModel:(ContentInfo *)content atIndexPath:(NSIndexPath *)indexPath
-{
-    
-    [self.infoTable reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-}
 @end
