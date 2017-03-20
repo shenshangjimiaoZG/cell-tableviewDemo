@@ -58,17 +58,19 @@
 }
 -(void)configCellWithModel:(CommentInfo *)comment
 {
-    NSString *str = [NSString stringWithFormat:@"%@回复%@:",
+    NSString *str = [NSString stringWithFormat:@"%@回复%@：",
                      comment.name, comment.reply];
     NSMutableAttributedString *desc=[[NSMutableAttributedString alloc]initWithString:str];
     [desc appendAttributedString:comment.comment];
-    self.lblDesc.attributedText=desc;
+   
     [desc addAttribute:NSForegroundColorAttributeName
                  value:[UIColor orangeColor]
                  range:NSMakeRange(0, comment.name.length)];
     [desc addAttribute:NSForegroundColorAttributeName
                  value:[UIColor orangeColor]
                  range:NSMakeRange(comment.name.length + 2, comment.reply.length)];
+    
+     self.lblDesc.attributedText=desc;
     [self emotionText_desc];
 }
 @end
