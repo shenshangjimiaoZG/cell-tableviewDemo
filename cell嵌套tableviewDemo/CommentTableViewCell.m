@@ -22,9 +22,10 @@
         
         if (attachment) { // 表情
             str = attachment.emotionStr;
-         NSString  *imageName = [NSString stringWithFormat:@"Emotion.bundle/%@",str];
+         
+            NSString  *imageName = [NSString stringWithFormat:@"Emotion.bundle/%@",str];
 
-            //NSLog(@"表情图片 %@",imageName);
+            NSLog(@"表情图片 %@",imageName);
         } else { // 文字
             str = [_lblDesc.attributedText.string substringWithRange:range];
             [strM appendString:str];
@@ -40,17 +41,20 @@
     {
         self.lblDesc=[UILabel new];
         self.lblDesc.numberOfLines=0;
-        self.lblDesc.font=[UIFont systemFontOfSize:14];
-        self.lblDesc.textColor=[UIColor darkGrayColor];
+        self.lblDesc.font=[UIFont systemFontOfSize:13];
+        self.lblDesc.textAlignment=NSTextAlignmentLeft;
         [self.contentView addSubview:self.lblDesc];
         
         [self.lblDesc mas_makeConstraints:^(MASConstraintMaker *make) {
            
-            make.edges.mas_equalTo(self.contentView);
+            make.size.equalTo(self.contentView);
+            make.center.equalTo(self.contentView);
         }];
 
         self.selectionStyle=UITableViewCellSelectionStyleNone;
         
+        self.hyb_bottomOffsetToCell=5;
+       
         return self;
     }
     
@@ -63,6 +67,7 @@
     NSMutableAttributedString *desc=[[NSMutableAttributedString alloc]initWithString:str];
     [desc appendAttributedString:comment.comment];
    
+    [desc addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]} range:NSMakeRange(0, desc.length)];
     [desc addAttribute:NSForegroundColorAttributeName
                  value:[UIColor orangeColor]
                  range:NSMakeRange(0, comment.name.length)];
@@ -71,6 +76,6 @@
                  range:NSMakeRange(comment.name.length + 2, comment.reply.length)];
     
      self.lblDesc.attributedText=desc;
-    [self emotionText_desc];
+    //[self emotionText_desc];
 }
 @end
