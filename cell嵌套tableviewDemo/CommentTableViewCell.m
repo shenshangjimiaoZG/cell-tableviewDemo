@@ -24,7 +24,7 @@
             str = attachment.emotionStr;
          NSString  *imageName = [NSString stringWithFormat:@"Emotion.bundle/%@",str];
 
-            NSLog(@"表情图片 %@",imageName);
+            //NSLog(@"表情图片 %@",imageName);
         } else { // 文字
             str = [_lblDesc.attributedText.string substringWithRange:range];
             [strM appendString:str];
@@ -58,8 +58,17 @@
 }
 -(void)configCellWithModel:(CommentInfo *)comment
 {
-    
-    self.lblDesc.attributedText=comment.comment;
+    NSString *str = [NSString stringWithFormat:@"%@回复%@:",
+                     comment.name, comment.reply];
+    NSMutableAttributedString *desc=[[NSMutableAttributedString alloc]initWithString:str];
+    [desc appendAttributedString:comment.comment];
+    self.lblDesc.attributedText=desc;
+    [desc addAttribute:NSForegroundColorAttributeName
+                 value:[UIColor orangeColor]
+                 range:NSMakeRange(0, comment.name.length)];
+    [desc addAttribute:NSForegroundColorAttributeName
+                 value:[UIColor orangeColor]
+                 range:NSMakeRange(comment.name.length + 2, comment.reply.length)];
     [self emotionText_desc];
 }
 @end
