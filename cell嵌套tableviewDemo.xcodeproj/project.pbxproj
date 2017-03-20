@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		1151E8CE1E78DC1E00C42F73 /* asap.png in Resources */ = {isa = PBXBuildFile; fileRef = 1151E8CD1E78DC1E00C42F73 /* asap.png */; };
+		1159A9FE1E7BE91E00642802 /* UITextField+YZEmotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1159A9EF1E7BE91E00642802 /* UITextField+YZEmotion.m */; };
+		1159A9FF1E7BE91E00642802 /* UITextView+YZEmotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1159A9F11E7BE91E00642802 /* UITextView+YZEmotion.m */; };
+		1159AA001E7BE91E00642802 /* YZEmotionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1159A9F31E7BE91E00642802 /* YZEmotionCell.m */; };
+		1159AA011E7BE91E00642802 /* YZEmotionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1159A9F41E7BE91E00642802 /* YZEmotionCell.xib */; };
+		1159AA021E7BE91E00642802 /* YZEmotionKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1159A9F61E7BE91E00642802 /* YZEmotionKeyboard.m */; };
+		1159AA031E7BE91E00642802 /* YZEmotionKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1159A9F71E7BE91E00642802 /* YZEmotionKeyboard.xib */; };
+		1159AA041E7BE91E00642802 /* YZEmotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1159A9F91E7BE91E00642802 /* YZEmotionManager.m */; };
+		1159AA051E7BE91E00642802 /* YZEmotionPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1159A9FB1E7BE91E00642802 /* YZEmotionPageCell.m */; };
+		1159AA061E7BE91E00642802 /* YZTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1159A9FD1E7BE91E00642802 /* YZTextAttachment.m */; };
+		1159AA0A1E7BE92A00642802 /* Emotion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1159AA071E7BE92A00642802 /* Emotion.bundle */; };
+		1159AA0B1E7BE92A00642802 /* emotion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1159AA081E7BE92A00642802 /* emotion.plist */; };
+		1159AA0C1E7BE92A00642802 /* emotionToText.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1159AA091E7BE92A00642802 /* emotionToText.plist */; };
+		1159AA0F1E7BE93800642802 /* YZInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1159AA0E1E7BE93800642802 /* YZInputView.m */; };
 		1169A4311E76A11D007C6994 /* ContentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1169A4301E76A11D007C6994 /* ContentInfo.m */; };
 		1169A4341E76A214007C6994 /* CommentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1169A4331E76A214007C6994 /* CommentInfo.m */; };
 		1169A4371E76A431007C6994 /* ContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1169A4361E76A431007C6994 /* ContentTableViewCell.m */; };
@@ -25,6 +38,27 @@
 
 /* Begin PBXFileReference section */
 		1151E8CD1E78DC1E00C42F73 /* asap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asap.png; sourceTree = "<group>"; };
+		1159A9EE1E7BE91E00642802 /* UITextField+YZEmotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+YZEmotion.h"; sourceTree = "<group>"; };
+		1159A9EF1E7BE91E00642802 /* UITextField+YZEmotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+YZEmotion.m"; sourceTree = "<group>"; };
+		1159A9F01E7BE91E00642802 /* UITextView+YZEmotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+YZEmotion.h"; sourceTree = "<group>"; };
+		1159A9F11E7BE91E00642802 /* UITextView+YZEmotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+YZEmotion.m"; sourceTree = "<group>"; };
+		1159A9F21E7BE91E00642802 /* YZEmotionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZEmotionCell.h; sourceTree = "<group>"; };
+		1159A9F31E7BE91E00642802 /* YZEmotionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZEmotionCell.m; sourceTree = "<group>"; };
+		1159A9F41E7BE91E00642802 /* YZEmotionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZEmotionCell.xib; sourceTree = "<group>"; };
+		1159A9F51E7BE91E00642802 /* YZEmotionKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZEmotionKeyboard.h; sourceTree = "<group>"; };
+		1159A9F61E7BE91E00642802 /* YZEmotionKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZEmotionKeyboard.m; sourceTree = "<group>"; };
+		1159A9F71E7BE91E00642802 /* YZEmotionKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZEmotionKeyboard.xib; sourceTree = "<group>"; };
+		1159A9F81E7BE91E00642802 /* YZEmotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZEmotionManager.h; sourceTree = "<group>"; };
+		1159A9F91E7BE91E00642802 /* YZEmotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZEmotionManager.m; sourceTree = "<group>"; };
+		1159A9FA1E7BE91E00642802 /* YZEmotionPageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZEmotionPageCell.h; sourceTree = "<group>"; };
+		1159A9FB1E7BE91E00642802 /* YZEmotionPageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZEmotionPageCell.m; sourceTree = "<group>"; };
+		1159A9FC1E7BE91E00642802 /* YZTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTextAttachment.h; sourceTree = "<group>"; };
+		1159A9FD1E7BE91E00642802 /* YZTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTextAttachment.m; sourceTree = "<group>"; };
+		1159AA071E7BE92A00642802 /* Emotion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emotion.bundle; sourceTree = "<group>"; };
+		1159AA081E7BE92A00642802 /* emotion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emotion.plist; sourceTree = "<group>"; };
+		1159AA091E7BE92A00642802 /* emotionToText.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emotionToText.plist; sourceTree = "<group>"; };
+		1159AA0D1E7BE93800642802 /* YZInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZInputView.h; sourceTree = "<group>"; };
+		1159AA0E1E7BE93800642802 /* YZInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZInputView.m; sourceTree = "<group>"; };
 		1169A42F1E76A11D007C6994 /* ContentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentInfo.h; sourceTree = "<group>"; };
 		1169A4301E76A11D007C6994 /* ContentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentInfo.m; sourceTree = "<group>"; };
 		1169A4321E76A214007C6994 /* CommentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentInfo.h; sourceTree = "<group>"; };
@@ -72,6 +106,42 @@
 			name = screenshot;
 			sourceTree = "<group>";
 		};
+		1187332E1E7B6FE800F695D0 /* vender */ = {
+			isa = PBXGroup;
+			children = (
+				1187332F1E7B70B300F695D0 /* YZEmotionKeyboard */,
+			);
+			name = vender;
+			sourceTree = "<group>";
+		};
+		1187332F1E7B70B300F695D0 /* YZEmotionKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1159AA0D1E7BE93800642802 /* YZInputView.h */,
+				1159AA0E1E7BE93800642802 /* YZInputView.m */,
+				1159AA071E7BE92A00642802 /* Emotion.bundle */,
+				1159AA081E7BE92A00642802 /* emotion.plist */,
+				1159AA091E7BE92A00642802 /* emotionToText.plist */,
+				1159A9EE1E7BE91E00642802 /* UITextField+YZEmotion.h */,
+				1159A9EF1E7BE91E00642802 /* UITextField+YZEmotion.m */,
+				1159A9F01E7BE91E00642802 /* UITextView+YZEmotion.h */,
+				1159A9F11E7BE91E00642802 /* UITextView+YZEmotion.m */,
+				1159A9F21E7BE91E00642802 /* YZEmotionCell.h */,
+				1159A9F31E7BE91E00642802 /* YZEmotionCell.m */,
+				1159A9F41E7BE91E00642802 /* YZEmotionCell.xib */,
+				1159A9F51E7BE91E00642802 /* YZEmotionKeyboard.h */,
+				1159A9F61E7BE91E00642802 /* YZEmotionKeyboard.m */,
+				1159A9F71E7BE91E00642802 /* YZEmotionKeyboard.xib */,
+				1159A9F81E7BE91E00642802 /* YZEmotionManager.h */,
+				1159A9F91E7BE91E00642802 /* YZEmotionManager.m */,
+				1159A9FA1E7BE91E00642802 /* YZEmotionPageCell.h */,
+				1159A9FB1E7BE91E00642802 /* YZEmotionPageCell.m */,
+				1159A9FC1E7BE91E00642802 /* YZTextAttachment.h */,
+				1159A9FD1E7BE91E00642802 /* YZTextAttachment.m */,
+			);
+			name = YZEmotionKeyboard;
+			sourceTree = "<group>";
+		};
 		11DE61FB1E769B47002E670B = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +163,7 @@
 		11DE62061E769B47002E670B /* cell嵌套tableviewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1187332E1E7B6FE800F695D0 /* vender */,
 				1151E8CC1E78DBFF00C42F73 /* screenshot */,
 				11DE621E1E769FA9002E670B /* HYBMasonryAutoCellHeight */,
 				11DE62271E76A07A002E670B /* model */,
@@ -238,10 +309,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1159AA011E7BE91E00642802 /* YZEmotionCell.xib in Resources */,
 				1151E8CE1E78DC1E00C42F73 /* asap.png in Resources */,
+				1159AA0B1E7BE92A00642802 /* emotion.plist in Resources */,
 				11DE62171E769B47002E670B /* LaunchScreen.storyboard in Resources */,
 				11DE62141E769B47002E670B /* Assets.xcassets in Resources */,
 				11DE62121E769B47002E670B /* Main.storyboard in Resources */,
+				1159AA0A1E7BE92A00642802 /* Emotion.bundle in Resources */,
+				1159AA0C1E7BE92A00642802 /* emotionToText.plist in Resources */,
+				1159AA031E7BE91E00642802 /* YZEmotionKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +376,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1159AA001E7BE91E00642802 /* YZEmotionCell.m in Sources */,
+				1159A9FE1E7BE91E00642802 /* UITextField+YZEmotion.m in Sources */,
+				1159AA041E7BE91E00642802 /* YZEmotionManager.m in Sources */,
 				1169A4341E76A214007C6994 /* CommentInfo.m in Sources */,
 				1169A43A1E76A451007C6994 /* CommentTableViewCell.m in Sources */,
+				1159A9FF1E7BE91E00642802 /* UITextView+YZEmotion.m in Sources */,
 				11DE620F1E769B47002E670B /* ViewController.m in Sources */,
 				11DE620C1E769B47002E670B /* AppDelegate.m in Sources */,
 				11DE62091E769B47002E670B /* main.m in Sources */,
 				11DE62231E769FEE002E670B /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */,
+				1159AA051E7BE91E00642802 /* YZEmotionPageCell.m in Sources */,
 				11DE62241E769FEE002E670B /* UITableView+HYBCacheHeight.m in Sources */,
+				1159AA021E7BE91E00642802 /* YZEmotionKeyboard.m in Sources */,
+				1159AA0F1E7BE93800642802 /* YZInputView.m in Sources */,
 				1169A4311E76A11D007C6994 /* ContentInfo.m in Sources */,
+				1159AA061E7BE91E00642802 /* YZTextAttachment.m in Sources */,
 				1169A4371E76A431007C6994 /* ContentTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,12 +513,14 @@
 			baseConfigurationReference = E751426F8B9C792EEA3D1BF0 /* Pods-cell嵌套tableviewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VD7YXLEFZZ;
 				INFOPLIST_FILE = "cell嵌套tableviewDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.asap.cell--tableviewDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -443,12 +529,14 @@
 			baseConfigurationReference = 59D4BD23B01BD9A41C73F96E /* Pods-cell嵌套tableviewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VD7YXLEFZZ;
 				INFOPLIST_FILE = "cell嵌套tableviewDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.asap.cell--tableviewDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

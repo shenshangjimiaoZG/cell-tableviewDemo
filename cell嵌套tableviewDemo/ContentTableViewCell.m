@@ -5,6 +5,9 @@
 #import "ContentInfo.h"
 #import "CommentInfo.h"
 #import <ZYCornerRadius/UIImageView+CornerRadius.h>
+#import "YZInputView.h"
+#import "UITextView+YZEmotion.h"
+
 
 @interface ContentTableViewCell ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UIImageView *headerImgView;
@@ -12,11 +15,14 @@
 @property (nonatomic,strong)UIView *imgsView;
 @property (nonatomic,strong)NSMutableArray *imgAry;
 @property (nonatomic,strong)UITableView *commentTable;
-@property (nonatomic,strong)UITextView *txtInput;
+@property (nonatomic,strong)YZInputView *txtInput;
+@property (nonatomic,strong)UIButton *btnEmtion;
 @property (nonatomic,strong)UIButton *btnReply;
 
 @property (nonatomic,strong)NSIndexPath *indexPath;
 @property (nonatomic,strong)ContentInfo *info;
+@property (strong, nonatomic) YZEmotionKeyboard *emotionKeyboard;
+
 @end
 
 @implementation ContentTableViewCell
@@ -49,12 +55,18 @@
         self.commentTable=[UITableView new];
         [self.contentView addSubview:self.commentTable];
         
-        self.txtInput=[UITextView new];
+        self.txtInput=[YZInputView new];
         self.txtInput.font=[UIFont systemFontOfSize:17];
         self.txtInput.textColor=[UIColor colorWithRed:11.0f/255.0f green:124.0f/255.0f blue:175.0f/255.0f alpha:1];
         self.txtInput.backgroundColor=[UIColor lightGrayColor];
         self.txtInput.layer.borderWidth=2;
         [self.contentView addSubview:self.txtInput];
+        
+        self.btnEmtion=[UIButton buttonWithType:UIButtonTypeCustom];
+        [self.btnEmtion addTarget:self action:@selector(clickEmtionKeyboard) forControlEvents:UIControlEventTouchUpInside];
+        [self.btnEmtion setBackgroundImage:[UIImage imageNamed:@"smail"] forState:UIControlStateNormal];
+
+        [self.contentView addSubview:self.btnEmtion];
         
         self.btnReply=[UIButton buttonWithType:UIButtonTypeCustom];
         self.btnReply.layer.borderWidth=1;
@@ -106,13 +118,20 @@
             
             make.top.equalTo(weakSelf.commentTable.mas_bottom).offset(10);
             make.left.equalTo(weakSelf.commentTable.mas_left);
-            make.right.equalTo(weakSelf.btnReply.mas_left).offset(-5);
+            make.right.equalTo(weakSelf.btnEmtion.mas_left).offset(-5);
             make.height.equalTo(@35);
+        }];
+        [self.btnEmtion mas_makeConstraints:^(MASConstraintMaker *make) {
+            
+            make.top.bottom.equalTo(weakSelf.txtInput);
+            make.left.equalTo(weakSelf.txtInput.mas_right).offset(5);
+            make.width.equalTo(@40);
+            make.right.equalTo(weakSelf.btnReply.mas_left).offset(-5);
         }];
         [self.btnReply mas_makeConstraints:^(MASConstraintMaker *make) {
             
             make.top.bottom.equalTo(weakSelf.txtInput);
-            make.left.equalTo(weakSelf.txtInput.mas_right).offset(5);
+            make.left.equalTo(weakSelf.btnEmtion.mas_right).offset(5);
             make.width.equalTo(@60);
             make.right.equalTo(weakSelf.commentTable.mas_right);
         }];
@@ -231,9 +250,41 @@
         }
     }
 }
+
+// 懒加载键盘
+- (YZEmotionKeyboard *)emotionKeyboard
+{
+    // 创建表情键盘
+    if (_emotionKeyboard == nil) {
+        
+        YZEmotionKeyboard *emotionKeyboard = [YZEmotionKeyboard emotionKeyboard];
+        //__weak typeof(self)weakSelf=self;
+        emotionKeyboard.sendContent = ^(NSAttributedString *content){
+            
+            self.txtInput.attributedText=content;
+        };
+        
+        _emotionKeyboard = emotionKeyboard;
+    }
+    return _emotionKeyboard;
+}
+#pragma mark 表情键盘和文字键盘的切换
+-(void)clickEmtionKeyboard
+{
+    if (self.txtInput.inputView == nil) {
+        self.txtInput.yz_emotionKeyboard=self.emotionKeyboard;
+        [self.btnEmtion setBackgroundImage:[UIImage imageNamed:@"toolbar-text"] forState:UIControlStateNormal];
+    } else {
+        self.txtInput.inputView = nil;
+        [self.txtInput reloadInputViews];
+        [self.btnEmtion setBackgroundImage:[UIImage imageNamed:@"smail"] forState:UIControlStateNormal];
+    }
+    
+   
+}
 -(void)addComent
 {
-    
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"kGetMsg" object:nil];
     
     [self.txtInput resignFirstResponder];
     [self endEditing:YES];
@@ -242,7 +293,8 @@
     CommentInfo *model = [[CommentInfo alloc] init];
     model.name = @"asap";
     model.reply = @"sugar";
-    model.comment =self.txtInput.text;
+    model.comment =self.txtInput.attributedText;
+   
     if(model.comment.length<=0)
     {
         model.comment=@"I'm hurting, baby, I'm broken down I need your loving, loving, I need it now When I'm without you I'm something weak You got me begging Begging, I'm on my knees I don't wanna be needing your love I just wanna be deep in your love And it's killing me when you're away Ooh, baby,'Cause I really don't care where you are I just wanna be there where you are And I gotta get one little taste Your sugar Yes, please";
@@ -256,7 +308,7 @@
         self.updateBlock(YES,self.indexPath);
     }
     
-    
     self.txtInput.text=nil;
+    
 }
 @end
