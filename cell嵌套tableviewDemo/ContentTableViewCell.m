@@ -297,7 +297,7 @@
    
     if(model.comment.length<=0)
     {
-        model.comment=@"I'm hurting, baby, I'm broken down I need your loving, loving, I need it now When I'm without you I'm something weak You got me begging Begging, I'm on my knees I don't wanna be needing your love I just wanna be deep in your love And it's killing me when you're away Ooh, baby,'Cause I really don't care where you are I just wanna be there where you are And I gotta get one little taste Your sugar Yes, please";
+        model.comment=[[NSAttributedString alloc]initWithString:@"I'm hurting, baby, I'm broken down I need your loving, loving, I need it now When I'm without you I'm something weak You got me begging Begging, I'm on my knees I don't wanna be needing your love I just wanna be deep in your love And it's killing me when you're away Ooh, baby,'Cause I really don't care where you are I just wanna be there where you are And I gotta get one little taste Your sugar Yes, please"];
     }
     model.cid = [NSString stringWithFormat:@"commonModel%ld",  self.info.comments.count + 1];
     
