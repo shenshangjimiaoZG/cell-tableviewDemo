@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "cell-tableviewDemo"
   s.version      = "1.1"
-  s.summary      = "A short description of cell-tableviewDemo."
+  s.summary      = "cell嵌套tableview"
 
 
   s.homepage     = "https://github.com/huangping35/cell-tableviewDemo"
