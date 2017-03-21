@@ -258,10 +258,10 @@
     if (_emotionKeyboard == nil) {
         
         YZEmotionKeyboard *emotionKeyboard = [YZEmotionKeyboard emotionKeyboard];
-        //__weak typeof(self)weakSelf=self;
+        __weak typeof(self)weakSelf=self;
         emotionKeyboard.sendContent = ^(NSAttributedString *content){
             
-            self.txtInput.attributedText=content;
+            weakSelf.txtInput.attributedText=content;
         };
         
         _emotionKeyboard = emotionKeyboard;
@@ -303,9 +303,9 @@
     
     [self.info.comments addObject:model];
     
-    if(self.updateBlock)
+    if(_updateBlock)
     {
-        self.updateBlock(YES,self.indexPath);
+        _updateBlock(YES,self.indexPath);
     }
     
     self.txtInput.text=nil;

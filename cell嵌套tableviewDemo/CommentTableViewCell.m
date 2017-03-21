@@ -67,7 +67,7 @@
     NSMutableAttributedString *desc=[[NSMutableAttributedString alloc]initWithString:str];
     [desc appendAttributedString:comment.comment];
    
-    [desc addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]} range:NSMakeRange(0, desc.length)];
+    [desc addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13],NSForegroundColorAttributeName:[UIColor colorWithRed:55.0f/255.0f green:56.0f/255.0f blue:57.0f/255.0f alpha:1]} range:NSMakeRange(0, desc.length)];
     [desc addAttribute:NSForegroundColorAttributeName
                  value:[UIColor orangeColor]
                  range:NSMakeRange(0, comment.name.length)];
