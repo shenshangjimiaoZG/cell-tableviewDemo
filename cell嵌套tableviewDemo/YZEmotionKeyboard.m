@@ -35,7 +35,10 @@ static NSString * const ID = @"emotion";
     // 设置pageControl
     [self setupPageControl];
     
-    [self setupBottonButton];
+    //[self setupBottonButton];
+    
+    self.sendButton.hidden=YES;
+    self.categoryEmotionView.hidden=YES;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didSelectEmotion:) name:@"didSelectEmotion" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didClickDelete) name:@"didClickDelete" object:nil];
