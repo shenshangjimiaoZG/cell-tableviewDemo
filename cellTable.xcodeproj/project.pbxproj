@@ -33,7 +33,7 @@
 		11DE62171E769B47002E670B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DE62151E769B47002E670B /* LaunchScreen.storyboard */; };
 		11DE62231E769FEE002E670B /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DE62201E769FEE002E670B /* UITableViewCell+HYBMasonryAutoCellHeight.m */; };
 		11DE62241E769FEE002E670B /* UITableView+HYBCacheHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DE62221E769FEE002E670B /* UITableView+HYBCacheHeight.m */; };
-		B1C563691814BA6C03D698D2 /* Pods_cell__tableviewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6455C0D414B9C261593420E8 /* Pods_cell__tableviewDemo.framework */; };
+		89AEB81AAFDB3149F0C66742 /* Pods_cellTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C1FDA146E35FB9D605337D /* Pods_cellTable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +67,7 @@
 		1169A4361E76A431007C6994 /* ContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentTableViewCell.m; sourceTree = "<group>"; };
 		1169A4381E76A451007C6994 /* CommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
 		1169A4391E76A451007C6994 /* CommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
-		11DE62041E769B47002E670B /* cell嵌套tableviewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cell嵌套tableviewDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11DE62041E769B47002E670B /* cellTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cellTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DE62081E769B47002E670B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11DE620A1E769B47002E670B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11DE620B1E769B47002E670B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,9 +81,10 @@
 		11DE62201E769FEE002E670B /* UITableViewCell+HYBMasonryAutoCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+HYBMasonryAutoCellHeight.m"; sourceTree = "<group>"; };
 		11DE62211E769FEE002E670B /* UITableView+HYBCacheHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HYBCacheHeight.h"; sourceTree = "<group>"; };
 		11DE62221E769FEE002E670B /* UITableView+HYBCacheHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HYBCacheHeight.m"; sourceTree = "<group>"; };
-		59D4BD23B01BD9A41C73F96E /* Pods-cell嵌套tableviewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cell嵌套tableviewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-cell嵌套tableviewDemo/Pods-cell嵌套tableviewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6455C0D414B9C261593420E8 /* Pods_cell__tableviewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cell__tableviewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E751426F8B9C792EEA3D1BF0 /* Pods-cell嵌套tableviewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cell嵌套tableviewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cell嵌套tableviewDemo/Pods-cell嵌套tableviewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AB4A2C5DA483EA2F373D799D /* Pods-cellTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cellTable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cellTable/Pods-cellTable.debug.xcconfig"; sourceTree = "<group>"; };
+		E0C1FDA146E35FB9D605337D /* Pods_cellTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cellTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2AC86E9C8CC59F4C8B0468 /* Pods-cellTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cellTable.release.xcconfig"; path = "Pods/Target Support Files/Pods-cellTable/Pods-cellTable.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1C563691814BA6C03D698D2 /* Pods_cell__tableviewDemo.framework in Frameworks */,
+				89AEB81AAFDB3149F0C66742 /* Pods_cellTable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +146,7 @@
 		11DE61FB1E769B47002E670B = {
 			isa = PBXGroup;
 			children = (
-				11DE62061E769B47002E670B /* cell嵌套tableviewDemo */,
+				11DE62061E769B47002E670B /* cellTable */,
 				11DE62051E769B47002E670B /* Products */,
 				B24047957705BBD3A971B01E /* Pods */,
 				B0BD9FFEBC92B0F6886458D5 /* Frameworks */,
@@ -155,12 +156,12 @@
 		11DE62051E769B47002E670B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11DE62041E769B47002E670B /* cell嵌套tableviewDemo.app */,
+				11DE62041E769B47002E670B /* cellTable.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		11DE62061E769B47002E670B /* cell嵌套tableviewDemo */ = {
+		11DE62061E769B47002E670B /* cellTable */ = {
 			isa = PBXGroup;
 			children = (
 				1187332E1E7B6FE800F695D0 /* vender */,
@@ -177,6 +178,7 @@
 				11DE62181E769B47002E670B /* Info.plist */,
 				11DE62071E769B47002E670B /* Supporting Files */,
 			);
+			name = cellTable;
 			path = "cell嵌套tableviewDemo";
 			sourceTree = "<group>";
 		};
@@ -234,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				6455C0D414B9C261593420E8 /* Pods_cell__tableviewDemo.framework */,
+				E0C1FDA146E35FB9D605337D /* Pods_cellTable.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -241,8 +244,8 @@
 		B24047957705BBD3A971B01E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E751426F8B9C792EEA3D1BF0 /* Pods-cell嵌套tableviewDemo.debug.xcconfig */,
-				59D4BD23B01BD9A41C73F96E /* Pods-cell嵌套tableviewDemo.release.xcconfig */,
+				AB4A2C5DA483EA2F373D799D /* Pods-cellTable.debug.xcconfig */,
+				EA2AC86E9C8CC59F4C8B0468 /* Pods-cellTable.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -250,9 +253,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11DE62031E769B47002E670B /* cell嵌套tableviewDemo */ = {
+		11DE62031E769B47002E670B /* cellTable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11DE621B1E769B47002E670B /* Build configuration list for PBXNativeTarget "cell嵌套tableviewDemo" */;
+			buildConfigurationList = 11DE621B1E769B47002E670B /* Build configuration list for PBXNativeTarget "cellTable" */;
 			buildPhases = (
 				3389C1ABD8AE02AA0E093BA8 /* [CP] Check Pods Manifest.lock */,
 				11DE62001E769B47002E670B /* Sources */,
@@ -265,9 +268,9 @@
 			);
 			dependencies = (
 			);
-			name = "cell嵌套tableviewDemo";
+			name = cellTable;
 			productName = "cell嵌套tableviewDemo";
-			productReference = 11DE62041E769B47002E670B /* cell嵌套tableviewDemo.app */;
+			productReference = 11DE62041E769B47002E670B /* cellTable.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -286,7 +289,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 11DE61FF1E769B47002E670B /* Build configuration list for PBXProject "cell嵌套tableviewDemo" */;
+			buildConfigurationList = 11DE61FF1E769B47002E670B /* Build configuration list for PBXProject "cellTable" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -299,7 +302,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11DE62031E769B47002E670B /* cell嵌套tableviewDemo */,
+				11DE62031E769B47002E670B /* cellTable */,
 			);
 		};
 /* End PBXProject section */
@@ -336,7 +339,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cell嵌套tableviewDemo/Pods-cell嵌套tableviewDemo-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cellTable/Pods-cellTable-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3389C1ABD8AE02AA0E093BA8 /* [CP] Check Pods Manifest.lock */ = {
@@ -366,7 +369,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cell嵌套tableviewDemo/Pods-cell嵌套tableviewDemo-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cellTable/Pods-cellTable-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -510,7 +513,7 @@
 		};
 		11DE621C1E769B47002E670B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E751426F8B9C792EEA3D1BF0 /* Pods-cell嵌套tableviewDemo.debug.xcconfig */;
+			baseConfigurationReference = AB4A2C5DA483EA2F373D799D /* Pods-cellTable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -526,7 +529,7 @@
 		};
 		11DE621D1E769B47002E670B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59D4BD23B01BD9A41C73F96E /* Pods-cell嵌套tableviewDemo.release.xcconfig */;
+			baseConfigurationReference = EA2AC86E9C8CC59F4C8B0468 /* Pods-cellTable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -543,7 +546,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11DE61FF1E769B47002E670B /* Build configuration list for PBXProject "cell嵌套tableviewDemo" */ = {
+		11DE61FF1E769B47002E670B /* Build configuration list for PBXProject "cellTable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11DE62191E769B47002E670B /* Debug */,
@@ -552,7 +555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11DE621B1E769B47002E670B /* Build configuration list for PBXNativeTarget "cell嵌套tableviewDemo" */ = {
+		11DE621B1E769B47002E670B /* Build configuration list for PBXNativeTarget "cellTable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11DE621C1E769B47002E670B /* Debug */,

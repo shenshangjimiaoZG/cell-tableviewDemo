@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "11DE62031E769B47002E670B"
-               BuildableName = "cell&#x5d4c;&#x5957;tableviewDemo.app"
-               BlueprintName = "cell&#x5d4c;&#x5957;tableviewDemo"
-               ReferencedContainer = "container:cell&#x5d4c;&#x5957;tableviewDemo.xcodeproj">
+               BuildableName = "cellTable.app"
+               BlueprintName = "cellTable"
+               ReferencedContainer = "container:cellTable.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "11DE62031E769B47002E670B"
-            BuildableName = "cell&#x5d4c;&#x5957;tableviewDemo.app"
-            BlueprintName = "cell&#x5d4c;&#x5957;tableviewDemo"
-            ReferencedContainer = "container:cell&#x5d4c;&#x5957;tableviewDemo.xcodeproj">
+            BuildableName = "cellTable.app"
+            BlueprintName = "cellTable"
+            ReferencedContainer = "container:cellTable.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "11DE62031E769B47002E670B"
-            BuildableName = "cell&#x5d4c;&#x5957;tableviewDemo.app"
-            BlueprintName = "cell&#x5d4c;&#x5957;tableviewDemo"
-            ReferencedContainer = "container:cell&#x5d4c;&#x5957;tableviewDemo.xcodeproj">
+            BuildableName = "cellTable.app"
+            BlueprintName = "cellTable"
+            ReferencedContainer = "container:cellTable.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "11DE62031E769B47002E670B"
-            BuildableName = "cell&#x5d4c;&#x5957;tableviewDemo.app"
-            BlueprintName = "cell&#x5d4c;&#x5957;tableviewDemo"
-            ReferencedContainer = "container:cell&#x5d4c;&#x5957;tableviewDemo.xcodeproj">
+            BuildableName = "cellTable.app"
+            BlueprintName = "cellTable"
+            ReferencedContainer = "container:cellTable.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -14,7 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-cell嵌套tableviewDemo.xcscheme</key>
+		<key>Pods-cellTable.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,17 +27,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>06462B501AC412785DCAD9E64C65C6FC</key>
+		<key>410D12010B2565202D7DAC720C31B730</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>756494D9FD3F8FA16211EBF04DB60ED6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C36CB2CB977A4E7D954935096D00A1ED</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C8D846E05A06F1B82D25686FBAFAA009</key>
 		<dict>
 			<key>primary</key>
 			<true/>

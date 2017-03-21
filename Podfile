@@ -1,7 +1,7 @@
 platform :ios, ‘8.0’
 use_frameworks!
 
-target ‘cell嵌套tableviewDemo’ do
+target ‘cellTable’ do
 
 pod 'Masonry'
 pod 'IQKeyboardManager'

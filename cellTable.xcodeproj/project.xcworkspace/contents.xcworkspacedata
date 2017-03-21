@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:cell&#x5d4c;&#x5957;tableviewDemo.xcodeproj">
+      location = "self:/Users/huangping/Desktop/cell-tableviewDemo/cellTable.xcodeproj">
    </FileRef>
 </Workspace>

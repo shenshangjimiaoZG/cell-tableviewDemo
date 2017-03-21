@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_cell__tableviewDemoVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_cell__tableviewDemoVersionString[];
+FOUNDATION_EXPORT double Pods_cellTableVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_cellTableVersionString[];
 
