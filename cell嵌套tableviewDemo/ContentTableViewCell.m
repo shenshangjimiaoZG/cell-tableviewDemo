@@ -244,9 +244,9 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [self.info.comments removeObjectAtIndex:indexPath.row];
         
-        if(self.updateBlock)
+        if(_updateBlock)
         {
-            self.updateBlock(YES,self.indexPath);
+            _updateBlock(YES,self.indexPath);
         }
     }
 }
