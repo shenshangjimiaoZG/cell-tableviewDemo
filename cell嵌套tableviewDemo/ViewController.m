@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.automaticallyAdjustsScrollViewInsets=NO;
+    
     
     self.infoTable=[UITableView new];
     self.infoTable.delegate=self;
@@ -26,10 +26,29 @@
     self.infoTable.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.infoTable registerClass:[ContentTableViewCell class] forCellReuseIdentifier:kContentTableViewCell];
     [self.view addSubview:self.infoTable];
+    
     [self.infoTable mas_makeConstraints:^(MASConstraintMaker *make) {
+        if(@available(iOS 11.0,*))
+        {
+        make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop);
+            make.left.right.equalTo(self.view);
+            make.bottom.equalTo(self.view.mas_safeAreaLayoutGuideBottom);
+        }
+        else
+        {
+            make.edges.equalTo(self.view);
+        }
         
-        make.edges.equalTo(self.view);
     }];
+    
+    if(@available(iOS 11.0,*))
+    {
+        self.infoTable.contentInsetAdjustmentBehavior=UIScrollViewContentInsetAdjustmentNever;
+    }
+    else
+    {
+        self.automaticallyAdjustsScrollViewInsets=NO;
+    }
     self.items=[NSMutableArray array];
     
     for (NSUInteger i = 0; i < 100; ++i) {
